@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace poligon_jaksa2026b
 {
-    internal class Program
+    internal class Tacka
     {
-        static void Main(string[] args)
-        {//dffdfdfxxxx
-        }
     }
 }
