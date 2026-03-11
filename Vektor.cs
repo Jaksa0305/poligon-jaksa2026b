@@ -8,5 +8,11 @@ namespace poligon_jaksa2026b
 {
     internal class Vektor
     {
+
+        public tacka pocetak;
+        public tacka kraj;
+        // public;
+            
+
     }
 }

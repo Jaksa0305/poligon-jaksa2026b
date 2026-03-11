@@ -8,5 +8,20 @@ namespace poligon_jaksa2026b
 {
     internal class Tacka
     {
+
+        public double x;
+        public double y;
+        public double d()
+        {
+            return Math.Sqrt(x*x + y*y);
+        }
+        
+        public Tacka(double a, double b) {
+
+            x = a;
+            y = b;
+            
+        }
+
     }
 }
