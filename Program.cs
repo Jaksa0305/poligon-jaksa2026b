@@ -9,7 +9,15 @@ namespace poligon_jaksa2026b
     internal class Program
     {
         static void Main(string[] args)
-        {//dffdfdfxxxx
+        {
+
+            tacka A = new tacka(2, 3);
+            tacka B = new tacka(4, 5);
+            tacka C = new tacka(6, 7);
+            tacka D = new tacka(8, 9);
+            Vektor AB = new Vektor(A, B);
+            AB.stampaj();
+
         }
     }
 }

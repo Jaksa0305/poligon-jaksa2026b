@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace poligon_jaksa2026b
 {
-    internal class Tacka
+    internal class tacka
     {
 
         public double x;
@@ -16,7 +16,7 @@ namespace poligon_jaksa2026b
             return Math.Sqrt(x*x + y*y);
         }
         
-        public Tacka(double a, double b) {
+        public tacka(double a, double b) {
 
             x = a;
             y = b;
