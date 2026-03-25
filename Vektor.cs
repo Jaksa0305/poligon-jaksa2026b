@@ -28,6 +28,29 @@ namespace poligon_jaksa2026b
             pocetak = a;
             kraj = b;
         }
+        
+        public static double SP(Vektor a, Vektor b)
+        {
+            tacka a1 = a.centriraj();
+            tacka b1 = b.centriraj();
+            return a1.x * b1.x + a1.y * b1.y;
+        }
+        public static double VP(Vektor a, Vektor b)
+        {
+            tacka A = a.centriraj();
+            tacka B = b.centriraj();
+            double k = A.x * B.y - A.y * B.x;
+            return k;
+        }
+
+        public double duzina()
+        {
+            
+            tacka druga = this.centriraj();
+            
+            return druga.d();
+        }
+
 
     }
 }
