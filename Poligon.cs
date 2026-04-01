@@ -91,7 +91,24 @@ namespace poligon_jaksa2026b
             return obim;
         }
 
-
+        public bool Prost()
+        {
+            
+            for(int i = 0; i<br_temena-1; i++)
+            {
+                for(int j = i + 1; j < br_temena; j++)
+                {
+                    if (tacka.Iste(teme[i], teme[j])) return false;
+                }
+            }
+            Vektor[] stranica = new Vektor[br_temena];
+            for(int i = 0; i < br_temena - 2; i++)
+            {
+                for()
+            }
+            
+            return true;
+        }
 
     }
 }
