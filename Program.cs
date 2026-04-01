@@ -23,8 +23,19 @@ namespace poligon_jaksa2026b
         prvi.stampa();
         prvi.snimi();*/
 
-            Poligon drugi = Poligon.ucitaj();
-            drugi.stampa();
+            // Poligon drugi = Poligon.ucitaj();
+            //drugi.stampa();
+            tacka A = new tacka(1, 1);
+            tacka B = new tacka(5, 1);
+            tacka C = new tacka(2, 0.1);
+            tacka D = new tacka(2, 0);
+            Vektor AB = new Vektor(A, B);
+            Vektor CD = new Vektor(C, D);
+            Console.WriteLine(AB.Sece(CD));
+
+
+
+
         }
     }
 }

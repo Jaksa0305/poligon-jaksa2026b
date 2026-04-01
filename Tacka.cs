@@ -22,7 +22,14 @@ namespace poligon_jaksa2026b
             y = b;
             
         }
-       
+        public static bool Iste(tacka A, tacka B)
+        {
+            if ((A.x == B.x) && (A.y == B.y)) return true;
+            else return false; ;
+            
+
+            
+        }
 
     }
 }

@@ -51,6 +51,17 @@ namespace poligon_jaksa2026b
             return druga.d();
         }
 
+        public bool Sece(Vektor b)
+        {
+
+            int x = Ravan.SIS(this, b.pocetak, b.kraj);
+            int y = Ravan.SIS(b, this.pocetak, this.kraj);
+            if (x * y != 0) return true;
+            else return false;
+
+
+
+        }
 
     }
 }
