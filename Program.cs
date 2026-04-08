@@ -20,20 +20,21 @@ namespace poligon_jaksa2026b
            AB.stampaj();
            */
             /* Poligon prvi = Poligon.unos();
-        prvi.stampa();
-        prvi.snimi();*/
+            prvi.stampa();
+            prvi.snimi();*/
 
             // Poligon drugi = Poligon.ucitaj();
             //drugi.stampa();
-            tacka A = new tacka(1, 1);
+            /*tacka A = new tacka(1, 1);
             tacka B = new tacka(5, 1);
             tacka C = new tacka(2, 0.1);
             tacka D = new tacka(2, 0);
             Vektor AB = new Vektor(A, B);
             Vektor CD = new Vektor(C, D);
-            Console.WriteLine(AB.Sece(CD));
+            Console.WriteLine(AB.Sece(CD));*/
 
-
+            Poligon prvi = Poligon.unos();
+            Console.WriteLine(prvi.konveksan());
 
 
         }

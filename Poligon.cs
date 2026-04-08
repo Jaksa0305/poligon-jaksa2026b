@@ -91,29 +91,46 @@ namespace poligon_jaksa2026b
             return obim;
         }
 
-        public bool Prost()
+        public bool prost()
         {
-            
-            for(int i = 0; i<br_temena-1; i++)
+            for (int i = 0; i < br_temena - 1; i++)
             {
-                for(int j = i + 1; j < br_temena; j++)
+                for (int j = i + 1; j < br_temena; j++)
                 {
                     if (tacka.Iste(teme[i], teme[j])) return false;
                 }
             }
             Vektor[] stranica = new Vektor[br_temena];
-            for(int i = 0; i < br_temena - 2; i++)
+            // napravim stranice
+            for (int i = 0; i < br_temena - 2; i++)
             {
-                //for () ;
+                int kraj = br_temena;
+                if (i == 0) kraj--;
+                for (int j = i + 2; j < kraj; j++)
+                {
+                    if (stranica[i].Sece(stranica[j])) return false;
+                }
             }
-            
             return true;
         }
 
 
         public bool konveksan()
         {
-            return true;
+            int t = 0;
+
+            for(int i = 0; i<br_temena; i++)
+            {
+
+                Vektor prvi = new Vektor(teme[i], teme[(i + 1) % br_temena]);
+                Vektor drugi = new Vektor(teme[(i+1)%br_temena], teme[(i + 2) % br_temena]);
+                if (Vektor.VP(prvi, drugi) > 0) t++;
+
+            }
+            if ((t == br_temena) || (t == 0)) return true;
+            return false;
+
+            
         }
 
         public double povrsina()
