@@ -34,9 +34,12 @@ namespace poligon_jaksa2026b
             Console.WriteLine(AB.Sece(CD));*/
 
             Poligon prvi = Poligon.unos();
-            Console.WriteLine(prvi.konveksan());
+            if (prvi.prost())
+            {
+                Console.WriteLine(prvi.povrsina());
 
-
+            }
+            else Console.WriteLine("nije prost");
         }
     }
 }
