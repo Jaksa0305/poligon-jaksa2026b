@@ -104,11 +104,28 @@ namespace poligon_jaksa2026b
             Vektor[] stranica = new Vektor[br_temena];
             for(int i = 0; i < br_temena - 2; i++)
             {
-                for()
+                //for () ;
             }
             
             return true;
         }
 
+
+        public bool konveksan()
+        {
+            return true;
+        }
+
+        public double povrsina()
+        {
+            return 0;
+        }
+
+
+
     }
+
+
+
+
 }
