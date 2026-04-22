@@ -101,7 +101,8 @@ namespace poligon_jaksa2026b
                 }
             }
             Vektor[] stranica = new Vektor[br_temena];
-            // napravim stranice
+            
+
             for (int i = 0; i < br_temena - 2; i++)
             {
                 int kraj = br_temena;
