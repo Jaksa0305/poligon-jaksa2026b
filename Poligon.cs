@@ -10,8 +10,8 @@ namespace poligon_jaksa2026b
     internal class Poligon
     {
 
-        int br_temena;
-        tacka[] teme;
+       public int br_temena;
+       public tacka[] teme;
         public Poligon(int n)
         {
 
@@ -134,20 +134,18 @@ namespace poligon_jaksa2026b
             
         }
 
-        public  double povrsina()
+        public double povrsina()
         {
-            
-
             double plus = 0;
             double minus = 0;
+
             for (int i = 0; i < br_temena; i++)
             {
-
                 plus += teme[i].x * teme[(i + 1) % br_temena].y;
-                minus -= teme[i].y * teme[(i + 1) % br_temena].x;
-
+                minus += teme[i].y * teme[(i + 1) % br_temena].x;
             }
-            return Math.Abs(plus - minus)/2;
+
+            return Math.Abs(plus - minus) / 2.0;
         }
 
 

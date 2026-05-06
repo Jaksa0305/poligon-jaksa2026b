@@ -100,10 +100,23 @@ namespace poligon_jaksa2026b
             {
                 Console.WriteLine("Nije pravougli trapez");
             }
+
+
+            Poligon mojPoligon = new Poligon(4);
+            mojPoligon.teme[0] = a;
+            mojPoligon.teme[1] = b;
+            mojPoligon.teme[2] = c;
+            mojPoligon.teme[3] = d;
+
+            // 2. Pozivaš metodu
+            double p = mojPoligon.povrsina();
+
+            // 3. Ispisuješ rezultat
+            Console.WriteLine("Površina poligona je: " + p);
+
         }
 
-
-
+        
 
 
 
