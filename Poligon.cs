@@ -134,7 +134,7 @@ namespace poligon_jaksa2026b
             
         }
 
-        public double povrsina()
+        public  double povrsina()
         {
             
 

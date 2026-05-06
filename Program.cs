@@ -47,7 +47,7 @@ namespace poligon_jaksa2026b
             tacka a = new tacka(1, 1);
             tacka b = new tacka(3, 1);
             tacka c = new tacka(3, 5);
-            tacka d = new tacka(1, 2);
+            tacka d = new tacka(1, 5);
             Vektor ab = new Vektor(a, b);
             Vektor bc = new Vektor(b, c);
             Vektor cd = new Vektor(c, d);
