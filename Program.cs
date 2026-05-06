@@ -33,7 +33,8 @@ namespace poligon_jaksa2026b
             Vektor CD = new Vektor(C, D);
             Console.WriteLine(AB.Sece(CD));*/
 
-            Poligon prvi = Poligon.unos();
+            // Poligon prvi = Poligon.unos();
+            /*
             if (prvi.prost())
             {
                 Console.WriteLine(prvi.povrsina());
@@ -41,12 +42,12 @@ namespace poligon_jaksa2026b
             }
             else Console.WriteLine("nije prost");
 
+            */
 
-
-            tacka a = new tacka(1, 3);
-            tacka b = new tacka(1, 1);
-            tacka c = new tacka(4, 0);
-            tacka d = new tacka(3, 3);
+            tacka a = new tacka(1, 1);
+            tacka b = new tacka(3, 1);
+            tacka c = new tacka(3, 5);
+            tacka d = new tacka(1, 2);
             Vektor ab = new Vektor(a, b);
             Vektor bc = new Vektor(b, c);
             Vektor cd = new Vektor(c, d);
@@ -91,8 +92,14 @@ namespace poligon_jaksa2026b
                 Console.WriteLine("Jeste deltoid AB=BC");
             }
             else Console.WriteLine("nije deltoid"); ;
-
-
+            if (Vektor.SP(ab, bc) == 0 && Vektor.SP(bc, cd) == 0 || Vektor.SP(cd, da) == 0 && Vektor.SP(da, ab) == 0 || Vektor.SP(ab, bc) == 0 && Vektor.SP(da, ab) == 0 || Vektor.SP(cd, da) == 0 && Vektor.SP(bc, cd) == 0)
+            {
+                Console.WriteLine("Jeste pravougli trapez");
+            }
+            else
+            {
+                Console.WriteLine("Nije pravougli trapez");
+            }
         }
 
 
